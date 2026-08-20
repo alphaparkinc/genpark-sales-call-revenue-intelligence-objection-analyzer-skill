@@ -1,0 +1,38 @@
+{
+  "name": "genpark-sales-call-revenue-intelligence-objection-analyzer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Conversational sales call transcript analyzer, customer objection extractor & deal health forecaster.",
+  "author": "genpark",
+  "category": "sales",
+  "tags": [
+    "revenue-intelligence",
+    "sales-enablement",
+    "objection-handling",
+    "deal-health",
+    "crm-forecasting"
+  ],
+  "inputs": {
+    "call_transcript_text": {
+      "type": "string"
+    },
+    "deal_size_usd": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "detected_objections": {
+      "type": "array"
+    },
+    "deal_health_score": {
+      "type": "number"
+    },
+    "next_best_action": {
+      "type": "string"
+    },
+    "win_probability_pct": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
